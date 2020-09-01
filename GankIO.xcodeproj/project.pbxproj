@@ -3,32 +3,83 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3CBEFF9A05AFC64BC70F03 /* Pods_GankIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768AEA36E80B6239419DDC45 /* Pods_GankIO.framework */; };
+		E63DC084839E330408002418 /* GankMMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC1C1B03D57CBF1DDD7BF /* GankMMCollectionViewCell.m */; };
+		E63DC10E093097DA3625BB73 /* GankTecCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DCB1FBE3D5E677CE8EDC6 /* GankTecCategoryCell.m */; };
+		E63DC181FF891791D67907A2 /* GankMMTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC78A930F8266D3620BF0 /* GankMMTabController.m */; };
+		E63DC1BCF4EC9BF7E86E974E /* GankTecTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DCFD875DC8A03B6840F37 /* GankTecTabController.m */; };
+		E63DC4EC24DA87C27569757C /* GankRecFrameData.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DCB8732841EE76A15ED3E /* GankRecFrameData.m */; };
+		E63DC5FDC19CF62A983EC7D4 /* GankSelectRecStrategyController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC22E490C77B4163A4F53 /* GankSelectRecStrategyController.m */; };
+		E63DC6A0841D42FF7C4A032A /* GankMyTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC7B3CD215629F45D93CB /* GankMyTabController.m */; };
+		E63DC75FBDAE15646BAEABC2 /* GankTecData.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DCCB87B4CA2582A4A3A16 /* GankTecData.m */; };
+		E63DC81F0FF03322A554EC99 /* GankRecTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DCEF383FA5799CFBDAA28 /* GankRecTabController.m */; };
+		E63DC9B8E57EB3733971EE7E /* GankDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC1F0413523F4A5304827 /* GankDetailViewController.m */; };
+		E63DCA988309AC38B73257E1 /* GankTecCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC89048BD4982B0947A01 /* GankTecCategoryController.m */; };
+		E63DCC68C4053565B7B270F3 /* GankRecTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC3932983879B3E5ECCD4 /* GankRecTabCell.m */; };
+		E63DCCC0A3868489DF130567 /* GankPicDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC29E64A9E46B913ACEA9 /* GankPicDetailController.m */; };
+		E63DCD9828BB8E534A84DB36 /* GankMMData.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC296339F20E0F1067F87 /* GankMMData.m */; };
+		E63DCEDA41ECE3C4A7F8CD29 /* GankTecFrameData.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DCD21FC1223A488B919DC /* GankTecFrameData.m */; };
+		E63DCF7EF482E7AFDB0F7B03 /* GankRecData.m in Sources */ = {isa = PBXBuildFile; fileRef = E63DC4516F24E7E20B841C40 /* GankRecData.m */; };
 		ECB0615F24F3EAA7005CEF8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0615E24F3EAA7005CEF8A /* AppDelegate.m */; };
-		ECB0616224F3EAA7005CEF8A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0616124F3EAA7005CEF8A /* SceneDelegate.m */; };
-		ECB0616524F3EAA7005CEF8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0616424F3EAA7005CEF8A /* ViewController.m */; };
-		ECB0616824F3EAA7005CEF8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB0616624F3EAA7005CEF8A /* Main.storyboard */; };
 		ECB0616A24F3EAA8005CEF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB0616924F3EAA8005CEF8A /* Assets.xcassets */; };
 		ECB0616D24F3EAA8005CEF8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB0616B24F3EAA8005CEF8A /* LaunchScreen.storyboard */; };
 		ECB0617024F3EAA8005CEF8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0616F24F3EAA8005CEF8A /* main.m */; };
+		ECB0617924F4AD1C005CEF8A /* GankTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0617824F4AD1C005CEF8A /* GankTabBarController.m */; };
+		ECB0618A24F4BE56005CEF8A /* GankNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB0618924F4BE56005CEF8A /* GankNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F8EB848A204553ADC3A5B6F /* Pods-GankIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankIO.debug.xcconfig"; path = "Target Support Files/Pods-GankIO/Pods-GankIO.debug.xcconfig"; sourceTree = "<group>"; };
+		47F8881897A090266AFB1537 /* Pods-GankIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankIO.release.xcconfig"; path = "Target Support Files/Pods-GankIO/Pods-GankIO.release.xcconfig"; sourceTree = "<group>"; };
+		768AEA36E80B6239419DDC45 /* Pods_GankIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GankIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63DC1C1B03D57CBF1DDD7BF /* GankMMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankMMCollectionViewCell.m; sourceTree = "<group>"; };
+		E63DC1F0413523F4A5304827 /* GankDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankDetailViewController.m; sourceTree = "<group>"; };
+		E63DC1F65A2497E42C23354F /* GankRecTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankRecTabController.h; sourceTree = "<group>"; };
+		E63DC22E490C77B4163A4F53 /* GankSelectRecStrategyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankSelectRecStrategyController.m; sourceTree = "<group>"; };
+		E63DC276A4F1DCFC0DACA840 /* GankRecData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankRecData.h; sourceTree = "<group>"; };
+		E63DC296339F20E0F1067F87 /* GankMMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankMMData.m; sourceTree = "<group>"; };
+		E63DC29E64A9E46B913ACEA9 /* GankPicDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankPicDetailController.m; sourceTree = "<group>"; };
+		E63DC2B7E7B07E712E6F1528 /* GankSelectRecStrategyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankSelectRecStrategyController.h; sourceTree = "<group>"; };
+		E63DC3932983879B3E5ECCD4 /* GankRecTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankRecTabCell.m; sourceTree = "<group>"; };
+		E63DC426D893D5C99717D14A /* GankMMTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankMMTabController.h; sourceTree = "<group>"; };
+		E63DC42AC5A5E194341B88CA /* GankRecTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankRecTabCell.h; sourceTree = "<group>"; };
+		E63DC4516F24E7E20B841C40 /* GankRecData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankRecData.m; sourceTree = "<group>"; };
+		E63DC4CC3B6EE384BB857D89 /* GankTecCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTecCategoryController.h; sourceTree = "<group>"; };
+		E63DC59EA9416D09D75F0A42 /* GankConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankConstant.h; sourceTree = "<group>"; };
+		E63DC5FFAA7F7A3E1F63D230 /* GankPicDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankPicDetailController.h; sourceTree = "<group>"; };
+		E63DC78A930F8266D3620BF0 /* GankMMTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankMMTabController.m; sourceTree = "<group>"; };
+		E63DC7B3CD215629F45D93CB /* GankMyTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankMyTabController.m; sourceTree = "<group>"; };
+		E63DC7DAB13B1FDFBC2ACDA4 /* GankMyTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankMyTabController.h; sourceTree = "<group>"; };
+		E63DC83ED991ACA9EFBD67DD /* GankDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankDetailViewController.h; sourceTree = "<group>"; };
+		E63DC89048BD4982B0947A01 /* GankTecCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankTecCategoryController.m; sourceTree = "<group>"; };
+		E63DCABAE997AC3F1465047C /* GankTecData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTecData.h; sourceTree = "<group>"; };
+		E63DCB1FBE3D5E677CE8EDC6 /* GankTecCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankTecCategoryCell.m; sourceTree = "<group>"; };
+		E63DCB8732841EE76A15ED3E /* GankRecFrameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankRecFrameData.m; sourceTree = "<group>"; };
+		E63DCBF4096C216136D5D24C /* GankMMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankMMCollectionViewCell.h; sourceTree = "<group>"; };
+		E63DCC4061C5E7AC4860833E /* GankTecTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTecTabController.h; sourceTree = "<group>"; };
+		E63DCC4BB62A735BADA789F9 /* GankTecFrameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTecFrameData.h; sourceTree = "<group>"; };
+		E63DCC7FBE6E4ABF2A6420C6 /* GankTecCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTecCategoryCell.h; sourceTree = "<group>"; };
+		E63DCCB87B4CA2582A4A3A16 /* GankTecData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankTecData.m; sourceTree = "<group>"; };
+		E63DCD21FC1223A488B919DC /* GankTecFrameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankTecFrameData.m; sourceTree = "<group>"; };
+		E63DCDF1D3A9AC3C511AA8BC /* GankRecFrameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankRecFrameData.h; sourceTree = "<group>"; };
+		E63DCEF383FA5799CFBDAA28 /* GankRecTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankRecTabController.m; sourceTree = "<group>"; };
+		E63DCF1763C2FE2D657EBB32 /* GankMMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankMMData.h; sourceTree = "<group>"; };
+		E63DCFD875DC8A03B6840F37 /* GankTecTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankTecTabController.m; sourceTree = "<group>"; };
 		ECB0615A24F3EAA7005CEF8A /* GankIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB0615D24F3EAA7005CEF8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECB0615E24F3EAA7005CEF8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ECB0616024F3EAA7005CEF8A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		ECB0616124F3EAA7005CEF8A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		ECB0616324F3EAA7005CEF8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ECB0616424F3EAA7005CEF8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ECB0616724F3EAA7005CEF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECB0616924F3EAA8005CEF8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB0616C24F3EAA8005CEF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB0616E24F3EAA8005CEF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECB0616F24F3EAA8005CEF8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECB0617724F4AD1C005CEF8A /* GankTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GankTabBarController.h; sourceTree = "<group>"; };
+		ECB0617824F4AD1C005CEF8A /* GankTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GankTabBarController.m; sourceTree = "<group>"; };
+		ECB0618824F4BE56005CEF8A /* GankNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GankNetworkManager.h; sourceTree = "<group>"; };
+		ECB0618924F4BE56005CEF8A /* GankNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GankNetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +87,150 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3CBEFF9A05AFC64BC70F03 /* Pods_GankIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		874D00CECC6ACCC245AD4995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F8EB848A204553ADC3A5B6F /* Pods-GankIO.debug.xcconfig */,
+				47F8881897A090266AFB1537 /* Pods-GankIO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F2E2D7A86E5FCC8665B5B2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				768AEA36E80B6239419DDC45 /* Pods_GankIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63DC02E1B398DA61019521C /* my */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC7B3CD215629F45D93CB /* GankMyTabController.m */,
+				E63DC7DAB13B1FDFBC2ACDA4 /* GankMyTabController.h */,
+			);
+			path = my;
+			sourceTree = "<group>";
+		};
+		E63DC04BE3CE8BE551DAEFD2 /* picdetail */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC29E64A9E46B913ACEA9 /* GankPicDetailController.m */,
+				E63DC5FFAA7F7A3E1F63D230 /* GankPicDetailController.h */,
+			);
+			path = picdetail;
+			sourceTree = "<group>";
+		};
+		E63DC44F4C515CD2993797F4 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC22E490C77B4163A4F53 /* GankSelectRecStrategyController.m */,
+				E63DC2B7E7B07E712E6F1528 /* GankSelectRecStrategyController.h */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		E63DC7FD1B985CEB750CF8FA /* detailpage */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC1F0413523F4A5304827 /* GankDetailViewController.m */,
+				E63DC83ED991ACA9EFBD67DD /* GankDetailViewController.h */,
+			);
+			path = detailpage;
+			sourceTree = "<group>";
+		};
+		E63DC8D179F029102A0214A5 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC296339F20E0F1067F87 /* GankMMData.m */,
+				E63DCF1763C2FE2D657EBB32 /* GankMMData.h */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		E63DC9205AF15770C11392AC /* rec */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC1F65A2497E42C23354F /* GankRecTabController.h */,
+				E63DCEF383FA5799CFBDAA28 /* GankRecTabController.m */,
+				E63DCBD40939B6BDFA846341 /* entity */,
+				E63DC3932983879B3E5ECCD4 /* GankRecTabCell.m */,
+				E63DC42AC5A5E194341B88CA /* GankRecTabCell.h */,
+			);
+			path = rec;
+			sourceTree = "<group>";
+		};
+		E63DCA37C207129F7EF50E71 /* tec */ = {
+			isa = PBXGroup;
+			children = (
+				E63DCC4061C5E7AC4860833E /* GankTecTabController.h */,
+				E63DCFD875DC8A03B6840F37 /* GankTecTabController.m */,
+				E63DC89048BD4982B0947A01 /* GankTecCategoryController.m */,
+				E63DC4CC3B6EE384BB857D89 /* GankTecCategoryController.h */,
+				E63DCB1FBE3D5E677CE8EDC6 /* GankTecCategoryCell.m */,
+				E63DCC7FBE6E4ABF2A6420C6 /* GankTecCategoryCell.h */,
+				E63DCD5549A3141B9BD9B581 /* entity */,
+			);
+			path = tec;
+			sourceTree = "<group>";
+		};
+		E63DCB89382E9FDB311DED5F /* constant */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC59EA9416D09D75F0A42 /* GankConstant.h */,
+			);
+			path = constant;
+			sourceTree = "<group>";
+		};
+		E63DCBD40939B6BDFA846341 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC4516F24E7E20B841C40 /* GankRecData.m */,
+				E63DC276A4F1DCFC0DACA840 /* GankRecData.h */,
+				E63DCB8732841EE76A15ED3E /* GankRecFrameData.m */,
+				E63DCDF1D3A9AC3C511AA8BC /* GankRecFrameData.h */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		E63DCD5549A3141B9BD9B581 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				E63DCCB87B4CA2582A4A3A16 /* GankTecData.m */,
+				E63DCABAE997AC3F1465047C /* GankTecData.h */,
+				E63DCD21FC1223A488B919DC /* GankTecFrameData.m */,
+				E63DCC4BB62A735BADA789F9 /* GankTecFrameData.h */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		E63DCF1886CEBA42A8F3075B /* mm */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC78A930F8266D3620BF0 /* GankMMTabController.m */,
+				E63DC426D893D5C99717D14A /* GankMMTabController.h */,
+				E63DC1C1B03D57CBF1DDD7BF /* GankMMCollectionViewCell.m */,
+				E63DCBF4096C216136D5D24C /* GankMMCollectionViewCell.h */,
+				E63DC8D179F029102A0214A5 /* entity */,
+			);
+			path = mm;
+			sourceTree = "<group>";
+		};
 		ECB0615124F3EAA7005CEF8A = {
 			isa = PBXGroup;
 			children = (
 				ECB0615C24F3EAA7005CEF8A /* GankIO */,
 				ECB0615B24F3EAA7005CEF8A /* Products */,
+				874D00CECC6ACCC245AD4995 /* Pods */,
+				9F2E2D7A86E5FCC8665B5B2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +245,50 @@
 		ECB0615C24F3EAA7005CEF8A /* GankIO */ = {
 			isa = PBXGroup;
 			children = (
+				ECB0618724F4BE1B005CEF8A /* common */,
+				ECB0617624F4ACA3005CEF8A /* mainpage */,
 				ECB0615D24F3EAA7005CEF8A /* AppDelegate.h */,
 				ECB0615E24F3EAA7005CEF8A /* AppDelegate.m */,
-				ECB0616024F3EAA7005CEF8A /* SceneDelegate.h */,
-				ECB0616124F3EAA7005CEF8A /* SceneDelegate.m */,
-				ECB0616324F3EAA7005CEF8A /* ViewController.h */,
-				ECB0616424F3EAA7005CEF8A /* ViewController.m */,
-				ECB0616624F3EAA7005CEF8A /* Main.storyboard */,
 				ECB0616924F3EAA8005CEF8A /* Assets.xcassets */,
 				ECB0616B24F3EAA8005CEF8A /* LaunchScreen.storyboard */,
 				ECB0616E24F3EAA8005CEF8A /* Info.plist */,
 				ECB0616F24F3EAA8005CEF8A /* main.m */,
+				E63DC7FD1B985CEB750CF8FA /* detailpage */,
+				E63DC04BE3CE8BE551DAEFD2 /* picdetail */,
+				E63DC44F4C515CD2993797F4 /* setting */,
+				E63DCB89382E9FDB311DED5F /* constant */,
 			);
 			path = GankIO;
+			sourceTree = "<group>";
+		};
+		ECB0617624F4ACA3005CEF8A /* mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				ECB0617A24F4ADB1005CEF8A /* tabs */,
+				ECB0617724F4AD1C005CEF8A /* GankTabBarController.h */,
+				ECB0617824F4AD1C005CEF8A /* GankTabBarController.m */,
+			);
+			path = mainpage;
+			sourceTree = "<group>";
+		};
+		ECB0617A24F4ADB1005CEF8A /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				E63DC9205AF15770C11392AC /* rec */,
+				E63DCA37C207129F7EF50E71 /* tec */,
+				E63DCF1886CEBA42A8F3075B /* mm */,
+				E63DC02E1B398DA61019521C /* my */,
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
+		ECB0618724F4BE1B005CEF8A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				ECB0618824F4BE56005CEF8A /* GankNetworkManager.h */,
+				ECB0618924F4BE56005CEF8A /* GankNetworkManager.m */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECB0617324F3EAA8005CEF8A /* Build configuration list for PBXNativeTarget "GankIO" */;
 			buildPhases = (
+				3E345155A48299134ECF5F68 /* [CP] Check Pods Manifest.lock */,
 				ECB0615624F3EAA7005CEF8A /* Sources */,
 				ECB0615724F3EAA7005CEF8A /* Frameworks */,
 				ECB0615824F3EAA7005CEF8A /* Resources */,
+				40483837D13616FDCC471155 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +319,7 @@
 		ECB0615224F3EAA7005CEF8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Gank;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "杨浪";
 				TargetAttributes = {
@@ -135,35 +353,84 @@
 			files = (
 				ECB0616D24F3EAA8005CEF8A /* LaunchScreen.storyboard in Resources */,
 				ECB0616A24F3EAA8005CEF8A /* Assets.xcassets in Resources */,
-				ECB0616824F3EAA7005CEF8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E345155A48299134ECF5F68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GankIO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40483837D13616FDCC471155 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GankIO/Pods-GankIO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GankIO/Pods-GankIO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GankIO/Pods-GankIO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECB0615624F3EAA7005CEF8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB0616524F3EAA7005CEF8A /* ViewController.m in Sources */,
 				ECB0615F24F3EAA7005CEF8A /* AppDelegate.m in Sources */,
+				ECB0617924F4AD1C005CEF8A /* GankTabBarController.m in Sources */,
 				ECB0617024F3EAA8005CEF8A /* main.m in Sources */,
-				ECB0616224F3EAA7005CEF8A /* SceneDelegate.m in Sources */,
+				ECB0618A24F4BE56005CEF8A /* GankNetworkManager.m in Sources */,
+				E63DC181FF891791D67907A2 /* GankMMTabController.m in Sources */,
+				E63DC6A0841D42FF7C4A032A /* GankMyTabController.m in Sources */,
+				E63DC81F0FF03322A554EC99 /* GankRecTabController.m in Sources */,
+				E63DC1BCF4EC9BF7E86E974E /* GankTecTabController.m in Sources */,
+				E63DCF7EF482E7AFDB0F7B03 /* GankRecData.m in Sources */,
+				E63DCC68C4053565B7B270F3 /* GankRecTabCell.m in Sources */,
+				E63DC4EC24DA87C27569757C /* GankRecFrameData.m in Sources */,
+				E63DC9B8E57EB3733971EE7E /* GankDetailViewController.m in Sources */,
+				E63DCA988309AC38B73257E1 /* GankTecCategoryController.m in Sources */,
+				E63DC10E093097DA3625BB73 /* GankTecCategoryCell.m in Sources */,
+				E63DC75FBDAE15646BAEABC2 /* GankTecData.m in Sources */,
+				E63DCEDA41ECE3C4A7F8CD29 /* GankTecFrameData.m in Sources */,
+				E63DC084839E330408002418 /* GankMMCollectionViewCell.m in Sources */,
+				E63DCD9828BB8E534A84DB36 /* GankMMData.m in Sources */,
+				E63DCCC0A3868489DF130567 /* GankPicDetailController.m in Sources */,
+				E63DC5FDC19CF62A983EC7D4 /* GankSelectRecStrategyController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ECB0616624F3EAA7005CEF8A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECB0616724F3EAA7005CEF8A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECB0616B24F3EAA8005CEF8A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,35 +554,41 @@
 		};
 		ECB0617424F3EAA8005CEF8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8EB848A204553ADC3A5B6F /* Pods-GankIO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCJDTMKA5F;
 				INFOPLIST_FILE = GankIO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangl.test.GankIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
 		ECB0617524F3EAA8005CEF8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F8881897A090266AFB1537 /* Pods-GankIO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCJDTMKA5F;
 				INFOPLIST_FILE = GankIO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangl.test.GankIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};

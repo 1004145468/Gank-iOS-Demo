@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GankTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -15,27 +16,35 @@
 @implementation AppDelegate
 
 
+#pragma mark "-----应用生命周期函数------"
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSLog(@"应用启动");
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [GankTabBarController new];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSLog(@"应用处在前台，获取到焦点");
 }
 
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+- (void)applicationWillResignActive:(UIApplication *)application {
+    NSLog(@"应用失去焦点");
 }
 
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    NSLog(@"应用进入后台");
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    NSLog(@"应用重新回到前台");
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    NSLog(@"应用被退出");
+}
 
 @end
