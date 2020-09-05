@@ -4,7 +4,6 @@
 //
 
 #import "GankPicDetailController.h"
-#import "Headers/Public/SDWebImage/SDAnimatedImageView+WebCache.h"
 #import "Headers/Public/SDWebImage/UIImageView+WebCache.h"
 
 @interface GankPicDetailController ()
@@ -52,10 +51,13 @@
     UITapGestureRecognizer *doubleGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(recoverScale)];
     doubleGestureRecognizer.numberOfTapsRequired = 2;
     doubleGestureRecognizer.numberOfTouchesRequired = 1;
+    [picView addGestureRecognizer:doubleGestureRecognizer];
     //relationship single tap with double tap
     [tapGestureRecognizer requireGestureRecognizerToFail:doubleGestureRecognizer];
+    //pan listener
+    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    [picView addGestureRecognizer:panGestureRecognizer];
 
-    [picView addGestureRecognizer:doubleGestureRecognizer];
     UIScrollView *picContainerView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     picContainerView.contentSize = [UIScreen mainScreen].bounds.size;
     picContainerView.minimumZoomScale = 1;
@@ -65,6 +67,33 @@
     self.picView = picView;
     [self.view addSubview:picContainerView];
     self.scrollView = picContainerView;
+}
+
+- (void)handlePanGesture:(UIPanGestureRecognizer *)gestureRecognizer {
+    CGPoint translationInView = [gestureRecognizer translationInView:self.scrollView];
+    CGFloat moveDistance = sqrt(translationInView.x * translationInView.x + translationInView.y * translationInView.y);
+    CGFloat maxDistance = [[UIScreen mainScreen] bounds].size.height;
+    CGFloat changeRate = moveDistance / maxDistance; // 0 - 1
+    //set pic transform
+    CGFloat picScale = MAX((1 - changeRate), 0.6);
+    UIView *targetView = gestureRecognizer.view;
+    CGAffineTransform translation = CGAffineTransformMakeTranslation(translationInView.x, translationInView.y);
+    CGAffineTransform scaleTransform = CGAffineTransformScale(translation, picScale, picScale);
+    targetView.transform = scaleTransform;
+    //set maskView alpha
+    self.maskBtn.alpha = (1 - changeRate);
+    UIGestureRecognizerState state = gestureRecognizer.state;
+    //reset
+    if (state == UIGestureRecognizerStateEnded) {
+        if (changeRate > 0.3) {
+            [self closeImage];
+        } else {
+            [UIView animateWithDuration:(changeRate * 2) animations:^{
+                self.maskBtn.alpha = 1;
+                targetView.transform = CGAffineTransformIdentity;
+            }];
+        }
+    }
 }
 
 - (nullable UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
@@ -90,6 +119,6 @@
 }
 
 - (void)recoverScale {
-    [self.scrollView setZoomScale:0.5 animated:YES];
+    [self.scrollView setZoomScale:1 animated:YES];
 }
 @end

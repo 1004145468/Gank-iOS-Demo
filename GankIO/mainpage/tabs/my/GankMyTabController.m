@@ -10,8 +10,11 @@
 #import "Headers/Public/Masonry/View+MASAdditions.h"
 #import "Headers/Public/SDWebImage/UIImageView+WebCache.h"
 #import "GankSelectRecStrategyController.h"
+#import "GankConstant.h"
 
 @interface GankMyTabController ()
+
+@property(nonatomic) NSMutableArray *dataList;
 
 @end
 
@@ -25,6 +28,12 @@
         self.tabBarItem.image = [UIImage imageNamed:@"my_normal"];
         self.tabBarItem.selectedImage = [UIImage imageNamed:@"my_press"];
     }
+    //mock data
+    self.dataList = [NSMutableArray array];
+    [self.dataList addObject:@[@"推荐策略"]];
+    [self.dataList addObject:@[@"Mock", @"Mock", @"Mock"]];
+    [self.dataList addObject:@[@"Mock", @"Mock", @"Mock", @"Mock"]];
+
     return self;
 }
 
@@ -44,7 +53,7 @@
     [headView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.view.mas_left);
         make.right.mas_equalTo(self.view.mas_right);
-        make.top.mas_equalTo(self.view.mas_top).mas_offset(88);
+        make.top.mas_equalTo(self.view.mas_top).mas_offset(mcNavBarAndStatusBarHeight);
         make.height.mas_equalTo(200);
     }];
     UIImageView *coverImgView = [UIImageView new];
@@ -98,11 +107,11 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return self.dataList.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [self.dataList[(NSUInteger) section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -113,11 +122,8 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.selectedBackgroundView = [UIView new];
     }
-    if (indexPath.section == 0 && indexPath.row == 0) {
-        cell.textLabel.text = @"推荐策略";
-    } else {
-        cell.textLabel.text = [NSString stringWithFormat:@"section=%ld, row=%ld", indexPath.section, indexPath.row];
-    }
+    NSString *title = self.dataList[(NSUInteger) indexPath.section][(NSUInteger) indexPath.row];
+    cell.textLabel.text = title;
     return cell;
 }
 
@@ -126,7 +132,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0 && indexPath.row == 0) { //选择推荐策略
+    NSString *title = self.dataList[(NSUInteger) indexPath.section][(NSUInteger) indexPath.row];
+    if ([title isEqualToString:@"推荐策略"]) {
         GankSelectRecStrategyController *controller = [[GankSelectRecStrategyController alloc] init];
         [self.navigationController pushViewController:controller animated:YES];
     }
